@@ -1,3 +1,15 @@
+# v0.1.8 (Fri Nov 15 2019)
+
+#### ⚠️  Pushed to master
+
+- remove Intro story  ([@digaodev](https://github.com/digaodev))
+
+#### Authors: 1
+
+- digaodev ([@digaodev](https://github.com/digaodev))
+
+---
+
 # v0.1.7 (Fri Nov 15 2019)
 
 
