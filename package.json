@@ -1,7 +1,6 @@
 {
-  "name": "learnstorybook-design-system",
-  "version": "0.1.0",
-  "private": true,
+  "name": "digaodev-storybook-design-system-ex",
+  "version": "0.1.1",
   "dependencies": {
     "polished": "^3.4.2",
     "prop-types": "^15.7.2",
@@ -11,13 +10,15 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "build-storybook-docs": "build-storybook -s public --docs",
+    "build": "BABEL_ENV=production babel src -d dist"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.0",
     "@storybook/addon-a11y": "^5.2.6",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-docs": "^5.2.6",
@@ -43,7 +45,13 @@
     "@storybook/addon-storysource": "^5.2.6",
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
+    "auto": "^7.16.2",
     "prettier": "^1.19.1",
     "storybook-chromatic": "^3.1.0"
-  }
+  },
+  "description": "Learn Storybook design system",
+  "main": "dist/index.js",
+  "repository": "https://github.com/digaodev/learnstorybook-design-system.git",
+  "author": "digaodev <rodrigo.rb.dev@gmail.com>",
+  "license": "MIT"
 }
