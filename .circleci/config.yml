@@ -36,3 +36,8 @@ jobs:
       # run tests!
       - run: yarn test
       - run: yarn chromatic test --app-code=ggsai7nvldr --exit-zero-on-changes
+      - run: |
+          if [ $CIRCLE_BRANCH = "master" ]
+          then
+            yarn release
+          fi
